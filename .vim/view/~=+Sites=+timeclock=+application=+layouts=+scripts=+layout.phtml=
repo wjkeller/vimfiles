@@ -106,12 +106,12 @@ setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 121 - ((70 * winheight(0) + 45) / 90)
+let s:l = 87 - ((86 * winheight(0) + 45) / 90)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-121
-normal! 08l
+87
+normal! 016l
 lcd ~/Sites/timeclock
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

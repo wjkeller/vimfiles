@@ -112,11 +112,10 @@ silent! normal! zE
 80,95fold
 97,120fold
 97,120fold
-122,137fold
-139,150fold
-152,166fold
-168,185fold
-187,193fold
+122,133fold
+135,149fold
+151,168fold
+170,176fold
 9
 normal zo
 33
@@ -124,7 +123,7 @@ normal zc
 54
 normal zc
 80
-normal zc
+normal zo
 97
 normal zo
 97
@@ -133,20 +132,18 @@ normal zc
 normal zo
 122
 normal zc
-139
+135
 normal zc
-152
+151
 normal zc
-168
+170
 normal zc
-187
-normal zc
-let s:l = 12 - ((11 * winheight(0) + 45) / 90)
+let s:l = 122 - ((121 * winheight(0) + 45) / 90)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-12
-normal! 012l
+122
+normal! 04l
 lcd ~/Sites/timeclock
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost

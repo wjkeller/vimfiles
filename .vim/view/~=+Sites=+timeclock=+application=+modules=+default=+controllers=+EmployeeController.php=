@@ -108,9 +108,9 @@ setlocal wrapmargin=0
 silent! normal! zE
 5,6fold
 8,40fold
-8,56fold
-8,56fold
-8,73fold
+8,58fold
+8,58fold
+8,75fold
 5
 normal zc
 8
@@ -127,12 +127,12 @@ normal zo
 normal zo
 8
 normal zo
-let s:l = 32 - ((31 * winheight(0) + 45) / 90)
+let s:l = 46 - ((45 * winheight(0) + 45) / 90)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-32
-normal! 0
+46
+normal! 097l
 lcd ~/Sites/timeclock
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
